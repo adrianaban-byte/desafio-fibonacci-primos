@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas que resuelven problemas: Fibonacci en el Ahorro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Desafío Web: Fibonacci en el Mundo Real</h1>
+        <p><strong>Autor:</strong> Adrian U. Aban</p>
+    </header>
+
+    <main>
+        <section class="seccion-info">
+            <h2>Contexto del Problema</h2>
+            <p>
+                Ahorrar dinero de forma constante puede ser un reto difícil. En lugar de guardar una cantidad fija, 
+                este proyecto aplica la secuencia de Fibonacci para crear un plan de ahorro progresivo. 
+                Cada mes, el usuario incrementa su depósito basándose en la suma de los dos meses anteriores, 
+                permitiendo un crecimiento paulatino del capital.
+            </p>
+        </section>
+
+        <section class="seccion-info">
+            <h2>Explicación del Algoritmo</h2>
+            <p>
+                La sucesión de Fibonacci comienza con 0 y 1. Los siguientes números se calculan sumando los dos valores 
+                anteriores (0, 1, 1, 2, 3, 5, 8, 13...). Para este simulador, utilizamos un ciclo que calcula dinámicamente 
+                el depósito mensual correspondiente y acumula el total guardado sin recurrir a estructuras complejas de vectores.
+            </p>
+        </section>
+
+        <section class="seccion-formulario">
+            <h2>Simulador de Ahorro</h2>
+            <form id="formularioAhorro" onsubmit="return false;">
+                <label for="meses">Cantidad de meses a simular:</label>
+                <input type="number" id="meses" min="1" max="36" placeholder="Ej. 6" required>
+                
+                <button type="button" id="btnCalcular">Calcular Plan de Ahorro</button>
+            </form>
+        </section>
+
+        <section id="seccionResultado" class="seccion-resultado">
+            <h2>Resultado de la Simulación</h2>
+            <div id="resultadoAcumulado"></div>
+            <div id="resultadoDetalle"></div>
+        </section>
+
+        <section class="seccion-info">
+            <h2>Conclusión</h2>
+            <p>
+                La matemática de Fibonacci nos demuestra cómo pequeños incrementos lógicos y ordenados pueden generar 
+                un impacto significativo a largo plazo. Al aplicar este patrón, el ahorro se vuelve dinámico y predecible.
+            </p>
+        </section>
+
+        <section class="seccion-enlaces">
+            <h2>Entregables del Proyecto</h2>
+            <p><a id="linkGit" href="https://github.com/tu-usuario/desafio-fibonacci-primos" target="_blank">Código Fuente en GitHub</a></p>
+            <p><a id="linkDeploy" href="https://tu-usuario.github.io/desafio-fibonacci-primos/" target="_blank">Sitio Web Publicado</a></p>
+        </section>
+    </main>
+
+   <div class="contenedor-imagen-movil">
+        <img src="C:\Users\ADRIAN\My project (1)\proyecto\imagen\Achu_Aban.png" alt="Icono Ahorro" id="imagenDecorativa">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
