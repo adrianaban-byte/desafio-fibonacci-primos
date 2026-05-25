@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas en la Vida Real: Números Primos y Ciberseguridad</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Desafío Web: Seguridad con Números Primos</h1>
+        <p><strong>Autor:</strong> Adrian U. Aban</p>
+    </header>
+
+    <main>
+        <section class="seccion-info">
+            <h2>Contexto del Problema Real</h2>
+            <p>
+                En la ciberseguridad y criptografía actuales, la validación de códigos de acceso y llaves de seguridad 
+                es fundamental para proteger cuentas y sistemas. Los algoritmos modernos aprovechan la propiedad de 
+                los números primos (su dificultad para ser factorizados) para generar contraseñas y tokens blindados. 
+                Este simulador analiza si un código numérico cumple con esta propiedad matemática esencial para asegurar su robustez.
+            </p>
+        </section>
+
+        <section class="seccion-info">
+            <h2>Explicación del Algoritmo</h2>
+            <p>
+                Un número primo es un entero mayor que 1 que solo puede dividirse exactamente entre 1 y sí mismo. 
+                El validador toma el código ingresado por el usuario y ejecuta un ciclo iterativo que cuenta cuántas 
+                veces se divide de forma exacta. Si al finalizar el recorrido el contador es igual a 2, la clave se 
+                clasifica como un "Bloque Primo Seguro"; de lo contrario, se advierte sobre su vulnerabilidad.
+            </p>
+        </section>
+
+        <section class="seccion-formulario">
+            <h2>Validador de Código de Acceso</h2>
+            <form id="formularioPrimos" onsubmit="return false;">
+                <label for="numero">Ingrese el código numérico a verificar:</label>
+                <input type="number" id="numero" min="1" placeholder="Ej. 13" required>
+                
+                <button type="button" id="btnVerificar">Verificar Robustez de Clave</button>
+            </form>
+        </section>
+
+        <section id="seccionResultado" class="seccion-resultado">
+            <h2>Resultado del Análisis de Seguridad</h2>
+            <div id="resultado"></div>
+        </section>
+
+        <section class="seccion-info">
+            <h2>Conclusión</h2>
+            <p>
+                La aplicación de los números primos en el software demuestra cómo las estructuras matemáticas abstractas 
+                son el pilar invisible que resguarda la privacidad digital en la vida diaria. Entender su comportamiento 
+                permite programar mejores barreras de protección contra ataques cibernéticos.
+            </p>
+        </section>
+
+        <section class="seccion-enlaces">
+            <h2>Entregables del Proyecto</h2>
+            <p><a id="linkGit" href="https://github.com/tu-usuario/desafio-fibonacci-primos" target="_blank">Código Fuente en GitHub</a></p>
+            <p><a id="linkDeploy" href="https://tu-usuario.github.io/desafio-fibonacci-primos/" target="_blank">Sitio Web Publicado</a></p>
+        </section>
+    </main>
+
+    <div class="contenedor-imagen-movil">
+        <img src="tu_imagen.png" alt="Icono Seguridad" id="imagenDecorativa">
+    </div>
+
+    <script src="js/script2.js"></script>
+</body>
+</html>

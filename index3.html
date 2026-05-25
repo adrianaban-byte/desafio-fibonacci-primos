@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biología y Matemáticas: Simulador de Ecosistemas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Simulador Biológico: Fibonacci y Primos</h1>
+        <p><strong>Autor:</strong> Adrian U. Aban</p>
+    </header>
+
+    <main>
+        <section class="seccion-info">
+            <h2>Contexto del Problema Real</h2>
+            <p>
+                En la naturaleza, muchas especies se reproducen siguiendo patrones matemáticos exactos. La secuencia de 
+                Fibonacci describe a la perfección cómo crece la población de ciertas colonias de insectos generación tras 
+                generación. Al mismo tiempo, los biólogos han descubierto que cuando estas poblaciones alcanzan un total equivalente 
+                a un número primo, la colonia experimenta una mutación evolutiva única que la protege de depredadores.
+            </p>
+        </section>
+
+        <section class="seccion-info">
+            <h2>Explicación de los Algoritmos</h2>
+            <p>
+                <strong>Crecimiento (Fibonacci):</strong> Suma las poblaciones de las dos generaciones anteriores para proyectar el crecimiento orgánico de la colonia.<br>
+                <strong>Evolución (Primos):</strong> Analiza la población final calculando sus divisores. Si solo se divide entre 1 y sí misma, la colonia habrá mutado con éxito.
+            </p>
+        </section>
+
+        <section class="seccion-formulario">
+            <h2>Controlador del Ecosistema</h2>
+            <form id="formularioEcosistema" onsubmit="return false;">
+                <label for="numero">Cantidad de generaciones a simular (Max 36):</label>
+                <input type="number" id="numero" min="1" max="36" placeholder="Ej. 8" required>
+                
+                <button type="button" id="btnProcesar">Iniciar Simulación Biológica</button>
+            </form>
+        </section>
+
+        <section id="seccionResultado" class="seccion-resultado">
+            <h2>Resultados de la Simulación</h2>
+            <div id="resultadoFibonacci"></div>
+            <div id="resultadoPrimo"></div>
+        </section>
+
+        <section class="seccion-info">
+            <h2>Conclusión</h2>
+            <p>
+                Este experimento demuestra que la vida y la ciencia están unidas por las matemáticas. La reproducción 
+                organizada por Fibonacci y los saltos evolutivos marcados por los números primos nos permiten modelar 
+                y comprender el comportamiento de los seres vivos.
+            </p>
+        </section>
+
+        <section class="seccion-enlaces">
+            <h2>Entregables del Proyecto</h2>
+            <p><a id="linkGit" href="https://github.com/tu-usuario/desafio-fibonacci-primos" target="_blank">Código Fuente en GitHub</a></p>
+            <p><a id="linkDeploy" href="https://tu-usuario.github.io/desafio-fibonacci-primos/" target="_blank">Sitio Web Publicado</a></p>
+        </section>
+    </main>
+
+    <div class="contenedor-imagen-movil">
+        <img src="tu_imagen.png" alt="Icono Ecosistema" id="imagenDecorativa">
+    </div>
+
+    <script src="js/script3.js"></script>
+</body>
+</html>

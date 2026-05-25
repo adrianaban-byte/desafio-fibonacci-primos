@@ -1,18 +1,19 @@
-
+/* Configuración de la página - Estilo Hollow Knight */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333333;
-    background-color: #fcfcfc;
+    color: #d2d4d6;             /* Gris claro */
+    background-color: #0f141a;  /* Gris oscuro profundo */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1a252f;
+    background-color: #161d26;  /* Gris intermedio */
     color: #ffffff;
     text-align: center;
     padding: 40px 20px;
+    border-bottom: 3px solid #2d3b4e; /* Línea metálica */
 }
 
 header h1 {
@@ -26,24 +27,24 @@ main {
     padding: 0 20px;
 }
 
-
+/* Cajas de las secciones */
 .seccion-info, .seccion-formulario, .seccion-resultado, .seccion-enlaces {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
+    background-color: #1b232e;  /* Fondo de cada bloque */
+    border: 1px solid #2d3b4e;  /* Borde de los bloques */
     border-radius: 4px;
     padding: 20px;
     margin-bottom: 20px;
 }
 
 h2 {
-    color: #2c3e50;
+    color: #ffffff;
     margin-top: 0;
-    border-bottom: 2px solid #ecf0f1;
+    border-bottom: 2px solid #2d3b4e;
     padding-bottom: 8px;
     font-size: 18px;
 }
 
-
+/* Estilos del formulario */
 label {
     display: block;
     margin-bottom: 8px;
@@ -54,13 +55,16 @@ input[type="number"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #cccccc;
+    background-color: #0f141a;
+    color: #ffffff;
+    border: 1px solid #3a4b63;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
+/* Botón estilo alma azul */
 button {
-    background-color: #27ae60;
+    background-color: #007acc;  /* Azul brillante */
     color: white;
     padding: 12px 20px;
     border: none;
@@ -71,24 +75,26 @@ button {
 }
 
 button:hover {
-    background-color: #219653;
+    background-color: #0098ff;  /* Azul claro al pasar el mouse */
 }
 
-
+/* Bloque de respuestas oculto al inicio */
 .seccion-resultado {
     display: none; 
-    background-color: #f9f9f9;
-    border-left: 5px solid #27ae60;
+    background-color: #161d26;
+    border-left: 5px solid #007acc;
 }
 
-.mes-item {
-    padding: 6px 0;
-    border-bottom: 1px dashed #dddddd;
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
 }
 
-
+/* Enlaces */
 a {
-    color: #2980b9;
+    color: #0098ff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -97,42 +103,37 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
+/* Imagen en la esquina que se mueve con la pantalla */
 .contenedor-imagen-movil {
-    position: fixed;      
-    bottom: 20px;          
-    right: 20px;            
-    z-index: 1000;          
+    position: fixed;     /* La fija en la pantalla */
+    bottom: 20px;        /* Distancia abajo */
+    right: 20px;         /* Distancia a la derecha */
+    z-index: 1000;       /* Queda encima del texto */
 }
 
 #imagenDecorativa {
-    width: 90px;           
+    width: 90px;
     height: auto;
-    border-radius: 50%;     
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.15); 
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 122, 204, 0.3); /* Brillo azul suave */
     opacity: 0.85;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease;
 }
-
 
 #imagenDecorativa:hover {
-    transform: scale(1.1);  
-    opacity: 1;            
-
+    transform: scale(1.1); /* Crece un poco al pasar el mouse */
+    opacity: 1;
 }
 
-
+/* Diseño para celulares (Sin usar Flexbox o Grid) */
 @media (max-width: 600px) {
     main {
         margin: 10px auto;
         padding: 0 10px;
     }
-    
     header h1 {
         font-size: 20px;
     }
-    
     button {
         font-size: 14px;
     }
