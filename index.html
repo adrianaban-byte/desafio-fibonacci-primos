@@ -3,71 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matemáticas que resuelven problemas: Fibonacci en el Ahorro</title>
+    <title>Plataforma de Desafíos Matemáticos</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        /* Estilos adicionales específicos para los bloques de selección del menú */
+        .tarjeta-proyecto {
+            margin-bottom: 25px;
+            padding: 25px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .tarjeta-proyecto:hover {
+            transform: translateY(-4px);
+            border-color: #007acc; /* Resplandor al pasar el mouse */
+        }
+        .btn-navegacion {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 15px;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <h1>Desafío Web: Fibonacci en el Mundo Real</h1>
-        <p><strong>Autor:</strong> Adrian U. Aban</p>
+        <h1>Plataforma de Soluciones Matemáticas</h1>
+        <p><strong>Desarrollador:</strong> Adrian U. Aban</p>
     </header>
 
     <main>
         <section class="seccion-info">
-            <h2>Contexto del Problema</h2>
+            <h2>Panel de Control e Investigación</h2>
             <p>
-                Ahorrar dinero de forma constante puede ser un reto difícil. En lugar de guardar una cantidad fija, 
-                este proyecto aplica la secuencia de Fibonacci para crear un plan de ahorro progresivo. 
-                Cada mes, el usuario incrementa su depósito basándose en la suma de los dos meses anteriores, 
-                permitiendo un crecimiento paulatino del capital.
+                Bienvenido a la suite de aplicaciones lógicas. Este espacio interactivo unifica tres proyectos 
+                distintos que demuestran cómo los patrones numéricos abstractos gobiernan aspectos clave de la vida cotidiana, 
+                las finanzas y la ciencia. Seleccione cualquiera de los módulos a continuación para inicializar el simulador.
             </p>
         </section>
 
-        <section class="seccion-info">
-            <h2>Explicación del Algoritmo</h2>
+        <section class="seccion-formulario tarjeta-proyecto">
+            <h2>Módulo I: Fibonacci en el Ahorro Progresivo</h2>
             <p>
-                La sucesión de Fibonacci comienza con 0 y 1. Los siguientes números se calculan sumando los dos valores 
-                anteriores (0, 1, 1, 2, 3, 5, 8, 13...). Para este simulador, utilizamos un ciclo que calcula dinámicamente 
-                el depósito mensual correspondiente y acumula el total guardado sin recurrir a estructuras complejas de vectores.
+                Utiliza la sucesión matemática para planificar depósitos financieros crecientes. Ideal para 
+                evaluar el crecimiento del capital mes a mes basándose en la suma de los valores predecesores.
             </p>
+            <a href="index1.html" class="btn-navegacion" style="background-color: #27ae60; color: white; padding: 12px; border-radius: 4px; font-weight: bold;">
+                Cargar Simulador de Ahorro
+            </a>
         </section>
 
-        <section class="seccion-formulario">
-            <h2>Simulador de Ahorro</h2>
-            <form id="formularioAhorro" onsubmit="return false;">
-                <label for="meses">Cantidad de meses a simular:</label>
-                <input type="number" id="meses" min="1" max="36" placeholder="Ej. 6" required>
-                
-                <button type="button" id="btnCalcular">Calcular Plan de Ahorro</button>
-            </form>
-        </section>
-
-        <section id="seccionResultado" class="seccion-resultado">
-            <h2>Resultado de la Simulación</h2>
-            <div id="resultadoAcumulado"></div>
-            <div id="resultadoDetalle"></div>
-        </section>
-
-        <section class="seccion-info">
-            <h2>Conclusión</h2>
+        <section class="seccion-formulario tarjeta-proyecto">
+            <h2>Módulo II: Seguridad y Criptografía Clásica</h2>
             <p>
-                La matemática de Fibonacci nos demuestra cómo pequeños incrementos lógicos y ordenados pueden generar 
-                un impacto significativo a largo plazo. Al aplicar este patrón, el ahorro se vuelve dinámico y predecible.
+                Analiza códigos de acceso digitales mediante la teoría de divisibilidad única. Permite determinar si una 
+                clave numérica actúa como un bloque blindado contra ataques informáticos comunes.
             </p>
+            <a href="index2.html" class="btn-navegacion" style="background-color: #007acc; color: white; padding: 12px; border-radius: 4px; font-weight: bold;">
+                Cargar Validador de Seguridad
+            </a>
+        </section>
+
+        <section class="seccion-formulario tarjeta-proyecto">
+            <h2>Módulo III: Ecosistemas y Mutación Orgánica</h2>
+            <p>
+                Un sistema unificado de alta complejidad. Modela la velocidad de reproducción de una colonia de insectos 
+                (Fibonacci) y dictamina si el volumen poblacional detona un salto evolutivo (Números Primos).
+            </p>
+            <a href="index3.html" class="btn-navegacion" style="background-color: #8e44ad; color: white; padding: 12px; border-radius: 4px; font-weight: bold;">
+                Cargar Simulador Biológico
+            </a>
         </section>
 
         <section class="seccion-enlaces">
-            <h2>Entregables del Proyecto</h2>
-            <p><a id="linkGit" href="https://github.com/tu-usuario/desafio-fibonacci-primos" target="_blank">Código Fuente en GitHub</a></p>
-            <p><a id="linkDeploy" href="https://tu-usuario.github.io/desafio-fibonacci-primos/" target="_blank">Sitio Web Publicado</a></p>
+            <h2>Repositorio Principal del Proyecto</h2>
+            <p><a id="linkGit" href="https://github.com/tu-usuario/desafio-fibonacci-primos" target="_blank">Código Fuente General en GitHub</a></p>
+            <p><a id="linkDeploy" href="https://tu-usuario.github.io/desafio-fibonacci-primos/" target="_blank">Entorno de Producción en Vivo</a></p>
         </section>
     </main>
 
-   <div class="contenedor-imagen-movil">
-        <img src="C:\Users\ADRIAN\My project (1)\proyecto\imagen\Achu_Aban.png" alt="Icono Ahorro" id="imagenDecorativa">
+    <div class="contenedor-imagen-movil">
+        <img src="tu_imagen.png" alt="Icono Navegación" id="imagenDecorativa">
     </div>
 
-    <script src="js/script.js"></script>
 </body>
-</html>
